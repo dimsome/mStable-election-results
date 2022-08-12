@@ -28,6 +28,8 @@ export const multiWinnerRCV = (
     return choices;
   }
 
+  const rounds = [];
+
   // Prepare Votes
   // Replace all numbers in voters with their corresponding choice name
   for (let i = 0; i < votes.length; i++) {
@@ -57,7 +59,9 @@ export const multiWinnerRCV = (
     votes.filter((vote: any) => vote.choice.length > 0);
 
     // Shift votes if have choices for candidates that already have been selected
-    votes = shiftVotes(votes, winners);
+    for (let i = 0; i < seats; i++) {
+      votes = shiftVotes(votes, winners);
+    }
 
     // Get the total votes from the first round
     if (round === 1) {
@@ -84,13 +88,17 @@ export const multiWinnerRCV = (
 
     console.log(`Votes for each choice: `);
     console.log(votesForChoice);
+    let remainingChoices = { ...votesForChoice };
 
     let sortedChoice = Object.keys(votesForChoice).sort(
       (a: any, b: any) => votesForChoice[b] - votesForChoice[a]
     );
 
+    let roundResult: string;
+
     if (votesForChoice[sortedChoice[0]] > threshold) {
-      console.log(`${sortedChoice[0]} has reached the threshold`);
+      roundResult = `${sortedChoice[0]} has reached the threshold`;
+      console.log(roundResult);
       winners.push(sortedChoice[0]);
       let lastWinnerIndex = choices.indexOf(sortedChoice[0]);
 
@@ -113,12 +121,14 @@ export const multiWinnerRCV = (
       choices.splice(lastWinnerIndex, 1);
       console.log(`Choices: ${choices}`);
     } else {
+      roundResult = `${sortedChoice[0]} has not reached the threshold`;
       console.log("No winner this round");
       // Remove the choice with the lowest vote count
       let sortedVotesForChoice = Object.keys(votesForChoice).sort(
         (a: any, b: any) => votesForChoice[a] - votesForChoice[b]
       );
       const lowestVote = sortedVotesForChoice[0];
+      roundResult += `, ${lowestVote} with the lowest votes has been removed`;
       console.log(`Removing lowest vote: ${lowestVote}`);
 
       // Remove from the votes array the votes that have the lowest vote count and shift to the second choice
@@ -136,8 +146,16 @@ export const multiWinnerRCV = (
       break;
     }
 
+    rounds.push({
+      round: round,
+      remainingChoices,
+      remainingSeats: seats - winners.length,
+      threshold: threshold,
+      roundResult,
+    });
+
     round++;
   }
 
-  return winners;
+  return { winners, rounds };
 };

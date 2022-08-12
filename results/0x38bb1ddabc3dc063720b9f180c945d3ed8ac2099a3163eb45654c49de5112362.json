@@ -1,0 +1,306 @@
+{
+  "proposalId": "0x38bb1ddabc3dc063720b9f180c945d3ed8ac2099a3163eb45654c49de5112362",
+  "seats": 4,
+  "removedChoices": [],
+  "proposal": {
+    "title": "ProtocolDAO Signer Elections (H2 2022)",
+    "choices": [
+      "derc",
+      "dimsome",
+      "james.simpson",
+      "phenrikand",
+      "rugolini",
+      "trustindistrust",
+      "tushar"
+    ],
+    "start": 1659952800,
+    "end": 1660298400,
+    "type": "ranked-choice",
+    "votes": 17,
+    "space": {
+      "id": "mstablegovernance.eth",
+      "name": "mStable"
+    }
+  },
+  "winners": [
+    "james.simpson",
+    "dimsome",
+    "trustindistrust",
+    "phenrikand"
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "remainingChoices": {
+        "derc": 0,
+        "dimsome": 3569368.799565248,
+        "james.simpson": 5084400.240907788,
+        "phenrikand": 0,
+        "rugolini": 1598574.926425041,
+        "trustindistrust": 2691906.319571012,
+        "tushar": 0
+      },
+      "remainingSeats": 3,
+      "threshold": 2588851.0572938174,
+      "roundResult": "james.simpson has reached the threshold"
+    },
+    {
+      "round": 2,
+      "remainingChoices": {
+        "derc": 0,
+        "dimsome": 3569368.799565248,
+        "phenrikand": 2495549.183613971,
+        "rugolini": 1598574.926425041,
+        "trustindistrust": 2691906.319571012,
+        "tushar": 0
+      },
+      "remainingSeats": 2,
+      "threshold": 2588851.0572938174,
+      "roundResult": "dimsome has reached the threshold"
+    },
+    {
+      "round": 3,
+      "remainingChoices": {
+        "derc": 181834.65780622372,
+        "phenrikand": 2495549.183613971,
+        "rugolini": 2397258.0108902478,
+        "trustindistrust": 2691906.319571012,
+        "tushar": 0
+      },
+      "remainingSeats": 1,
+      "threshold": 2588851.0572938174,
+      "roundResult": "trustindistrust has reached the threshold"
+    },
+    {
+      "round": 4,
+      "remainingChoices": {
+        "derc": 181857.8621809426,
+        "phenrikand": 2496251.21613463,
+        "rugolini": 2406864.200495852,
+        "tushar": 92723.83577621194
+      },
+      "remainingSeats": 1,
+      "threshold": 2588851.0572938174,
+      "roundResult": "phenrikand has not reached the threshold, tushar with the lowest votes has been removed"
+    },
+    {
+      "round": 5,
+      "remainingChoices": {
+        "derc": 181857.8621809426,
+        "phenrikand": 2496251.21613463,
+        "rugolini": 2499588.0362720643
+      },
+      "remainingSeats": 1,
+      "threshold": 2588851.0572938174,
+      "roundResult": "rugolini has not reached the threshold, derc with the lowest votes has been removed"
+    },
+    {
+      "round": 6,
+      "remainingChoices": {
+        "phenrikand": 2678085.873940854,
+        "rugolini": 2499588.0362720643,
+        "tushar": null
+      },
+      "remainingSeats": 0,
+      "threshold": 2588851.0572938174,
+      "roundResult": "phenrikand has reached the threshold"
+    }
+  ],
+  "votes": [
+    {
+      "id": "0xdfe3598e738eeec9949f0ca97bdac7f6953f9efc410ef95a00b3231f4270a3b5",
+      "voter": "0x3DF1b295d394B6c77415e9659Cc1a7DBCcA76Be7",
+      "created": 1660224663,
+      "choice": [
+        "rugolini",
+        "phenrikand",
+        "derc"
+      ],
+      "vp": 74108.75605529985
+    },
+    {
+      "id": "0x81e64f71d9a43bd6fde2135e6df772325093e056d407bfd70a6353a5a37eccaa",
+      "voter": "0xa23F54e0BB57a6114D831c080823F5Fe2616CF98",
+      "created": 1660206148,
+      "choice": [
+        "rugolini",
+        "tushar",
+        "derc"
+      ],
+      "vp": 32956.50098136109
+    },
+    {
+      "id": "0x7d2c712c43cda9050385f7c7f798addef96e2d9e13a5d11945abe57716dac2c0",
+      "voter": "0x0bf5eE128D559eEF716172A2E535A700129d278f",
+      "created": 1660205962,
+      "choice": [
+        "rugolini",
+        "tushar",
+        "derc"
+      ],
+      "vp": 50196.12530308359
+    },
+    {
+      "id": "0x5071dcbf2ed8b600f2062300054fa4433282aa5021273f9ab5795aa9c6b4a64b",
+      "voter": "0x908DB31Ce01DC42c8B712f9156E969bc65023119",
+      "created": 1660194205,
+      "choice": [
+        "rugolini",
+        "derc",
+        "phenrikand"
+      ],
+      "vp": 16757.32079929874
+    },
+    {
+      "id": "0x1646f521ae5b0d1b0e539f494f1e8094b2da3dccc009aa882007038ac1e562d5",
+      "voter": "0x714167f0075D49c2d5FF57DdF8C2F81F119Dfeb7",
+      "created": 1660191413,
+      "choice": [
+        "rugolini",
+        "tushar",
+        "derc",
+        "phenrikand"
+      ],
+      "vp": 461335.7332445355
+    },
+    {
+      "id": "bafkreids5znpm7nfvgsskyjwoix3hdcvclyn5qs24njfuwxg4rhlb3dl7u",
+      "voter": "0x73849dd5790F29bdAC8502760602e4360bB6bC1e",
+      "created": 1660150714,
+      "choice": [
+        "rugolini",
+        "derc",
+        "tushar",
+        "phenrikand"
+      ],
+      "vp": 22376.915143677423
+    },
+    {
+      "id": "0x9ce8ceb0284d584ed7aa5a5677f851be824538121e29f7dea00a8b1ea5a91949",
+      "voter": "0xB2d6Cc7098C3AecA089b6580A44b34559cd40971",
+      "created": 1660125508,
+      "choice": [
+        "rugolini",
+        "phenrikand",
+        "derc"
+      ],
+      "vp": 1857.7589216133479
+    },
+    {
+      "id": "0x1188c7b2efb6c229a726e91e3da7e2929066d7c71b8fc80bdb3ccbf432ab05ff",
+      "voter": "0x6f23759Dd4A1B4B422A8b087aa1D3338A6791Afb",
+      "created": 1660044152,
+      "choice": [
+        "tushar",
+        "rugolini",
+        "phenrikand"
+      ],
+      "vp": 23.204374718895835
+    },
+    {
+      "id": "0x61cf303e2f75d5a80ecbff8e0fb2bca66d74e870b003b1425d5a6055c06aedfb",
+      "voter": "0x99BcEa6bB0403927fB3c038163478D5b42082Fd9",
+      "created": 1660033845,
+      "choice": [
+        "rugolini",
+        "derc",
+        "phenrikand",
+        "tushar"
+      ],
+      "vp": 215.61573689933633
+    },
+    {
+      "id": "0x814bbf6ba1f1583822a68c562f0d566ef1c40f77c2ad706f8699ca7c18fd8049",
+      "voter": "0xE76Be9C1e10910d6Bc6b63D8031729747910c2f6",
+      "created": 1660020196,
+      "choice": [
+        "rugolini",
+        "tushar",
+        "derc",
+        "phenrikand"
+      ],
+      "vp": 1287872.2461339417
+    },
+    {
+      "id": "0x21b4f54054ace9437714bf624c801bcbb01bdfcf33ac90a171274ad5f7737e8b",
+      "voter": "0x94c5a4b47f49AFdDDDa4C781A5B3e47882c05BBf",
+      "created": 1659995854,
+      "choice": [
+        "rugolini",
+        "derc",
+        "tushar",
+        "phenrikand"
+      ],
+      "vp": 8421.357281464681
+    },
+    {
+      "id": "0x65407967b248201bf0faecb401a27e257bdb5f1d4b9d8e253a12875b384c52fd",
+      "voter": "0x2247772B13194424010404812bDEFd7025bFfeC3",
+      "created": 1659976833,
+      "choice": [
+        "rugolini",
+        "derc",
+        "tushar",
+        "phenrikand"
+      ],
+      "vp": 959.739181615419
+    },
+    {
+      "id": "0x016ef9adbf13e497d13504de8a802b2cf29a4db7546e5926adb79ea1441e2fda",
+      "voter": "0x2412d03eEf066b4D38f43c62feBBCE5d6f8457e5",
+      "created": 1659976830,
+      "choice": [
+        "rugolini",
+        "derc",
+        "tushar",
+        "phenrikand"
+      ],
+      "vp": 9.477405625197608
+    },
+    {
+      "id": "0x6484dfa7beffde131c56264b4e119c98f9b5765a348587c39565b50f87555511",
+      "voter": "0x41374B389772D5aEd41240a57f5FFB087C6bfA93",
+      "created": 1659969464,
+      "choice": [
+        "derc",
+        "rugolini",
+        "tushar"
+      ],
+      "vp": 23.391984503135003
+    },
+    {
+      "id": "0x48b56333b250d34e0b5db8b6a8b8d3de077d0f706803cad428bfce2d71a452c9",
+      "voter": "0xB27a7bD98421EB9eAEE522335F45A6F5B65C5C8d",
+      "created": 1659958612,
+      "choice": [
+        "rugolini",
+        "tushar",
+        "phenrikand",
+        "derc"
+      ],
+      "vp": 314970.43607699405
+    },
+    {
+      "id": "0x8368cd17b8d3bd5eaa5c2905afc0cf416dbf4376c5b80af8bb5c78e535663c26",
+      "voter": "0xF6F37336C7eFaCfAe9b0A9718a48B4FCd5014Ac9",
+      "created": 1659957377,
+      "choice": [
+        "rugolini",
+        "tushar"
+      ],
+      "vp": 6058.798378088659
+    },
+    {
+      "id": "0x795e6cbf27fb8ee1637475130d2c6e2f8b5c0cee97d04537168077a2b2f6d256",
+      "voter": "0xF2B8C142Edcf2f3Cc22665cCE863a7C9A3E9F156",
+      "created": 1659956274,
+      "choice": [
+        "rugolini",
+        "tushar",
+        "derc",
+        "phenrikand"
+      ],
+      "vp": 310702.6802910992
+    }
+  ]
+}

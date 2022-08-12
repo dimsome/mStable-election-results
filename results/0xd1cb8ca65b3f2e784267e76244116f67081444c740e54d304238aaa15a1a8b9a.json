@@ -1,0 +1,298 @@
+{
+  "proposalId": "0xd1cb8ca65b3f2e784267e76244116f67081444c740e54d304238aaa15a1a8b9a",
+  "seats": 6,
+  "removedChoices": [],
+  "proposal": {
+    "title": "TreasuryDAO Signer Elections (H2 2022)",
+    "choices": [
+      "derc",
+      "Jeshli",
+      "jkusne",
+      "OliJ",
+      "phenrikand",
+      "Rackz089",
+      "soulsby",
+      "TClochard"
+    ],
+    "start": 1659952800,
+    "end": 1660298400,
+    "type": "ranked-choice",
+    "votes": 17,
+    "space": {
+      "id": "mstablegovernance.eth",
+      "name": "mStable"
+    }
+  },
+  "winners": [
+    "TClochard",
+    "soulsby",
+    "phenrikand",
+    "Jeshli",
+    "jkusne",
+    "OliJ"
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "remainingChoices": {
+        "derc": 0,
+        "Jeshli": 1704712.6987781893,
+        "jkusne": 311308.8017211672,
+        "OliJ": 48526.51743177464,
+        "phenrikand": 0,
+        "Rackz089": 437717.94629349373,
+        "soulsby": 2679184.002206533,
+        "TClochard": 7764362.616489148
+      },
+      "remainingSeats": 5,
+      "threshold": 1849402.7975600432,
+      "roundResult": "TClochard has reached the threshold"
+    },
+    {
+      "round": 2,
+      "remainingChoices": {
+        "derc": 0,
+        "Jeshli": 1704712.6987781893,
+        "jkusne": 325278.6917911693,
+        "OliJ": 48526.51743177464,
+        "phenrikand": 3874531.0510317357,
+        "Rackz089": 437717.94629349373,
+        "soulsby": 4705642.880033898
+      },
+      "remainingSeats": 4,
+      "threshold": 1849402.7975600432,
+      "roundResult": "soulsby has reached the threshold"
+    },
+    {
+      "round": 3,
+      "remainingChoices": {
+        "derc": 451223.8656491329,
+        "Jeshli": 2336614.778776275,
+        "jkusne": 2095788.5229400832,
+        "OliJ": 48526.51743177464,
+        "phenrikand": 3874531.0510317357,
+        "Rackz089": 440322.25197121646
+      },
+      "remainingSeats": 3,
+      "threshold": 1849402.7975600432,
+      "roundResult": "phenrikand has reached the threshold"
+    },
+    {
+      "round": 4,
+      "remainingChoices": {
+        "derc": 451223.8656491329,
+        "Jeshli": 4361743.032247967,
+        "jkusne": 2095788.5229400832,
+        "OliJ": 48526.51743177464,
+        "Rackz089": 440322.25197121646
+      },
+      "remainingSeats": 2,
+      "threshold": 1849402.7975600432,
+      "roundResult": "Jeshli has reached the threshold"
+    },
+    {
+      "round": 5,
+      "remainingChoices": {
+        "derc": 451223.8656491329,
+        "jkusne": 4593546.358371128,
+        "OliJ": 63108.916688653226,
+        "Rackz089": 440322.25197121646
+      },
+      "remainingSeats": 1,
+      "threshold": 1849402.7975600432,
+      "roundResult": "jkusne has reached the threshold"
+    },
+    {
+      "round": 6,
+      "remainingChoices": {
+        "derc": 680180.5727364894,
+        "OliJ": 2395500.1774070263,
+        "Rackz089": 623117.8449765721
+      },
+      "remainingSeats": 0,
+      "threshold": 1849402.7975600432,
+      "roundResult": "OliJ has reached the threshold"
+    }
+  ],
+  "votes": [
+    {
+      "id": "0x7e7cc13642b47a7ac0ede83a9e5501181abf0f0aeb0e2c1e3b9f37838083e067",
+      "voter": "0xa23F54e0BB57a6114D831c080823F5Fe2616CF98",
+      "created": 1660206338,
+      "choice": [
+        "Rackz089",
+        "derc"
+      ],
+      "vp": 62560.293473995356
+    },
+    {
+      "id": "0xe0dc5f67a6354b549f53600ad24b32163e625056678c3ba314c32283176f1e4c",
+      "voter": "0x0bf5eE128D559eEF716172A2E535A700129d278f",
+      "created": 1660205796,
+      "choice": [
+        "Rackz089",
+        "derc"
+      ],
+      "vp": 96295.66892888161
+    },
+    {
+      "id": "0xb3c566cda03c332a7eacc3b9948e70d9aad595f87cbacdf7065f570abdc99e71",
+      "voter": "0x714167f0075D49c2d5FF57DdF8C2F81F119Dfeb7",
+      "created": 1660191531,
+      "choice": [
+        "Rackz089",
+        "derc"
+      ],
+      "vp": 131735.8713763983
+    },
+    {
+      "id": "bafkreigtvokrupoydspoc63xcfw2223qtkyvfkzbd2cshcjqg7njmvitji",
+      "voter": "0x73849dd5790F29bdAC8502760602e4360bB6bC1e",
+      "created": 1660150663,
+      "choice": [
+        "derc",
+        "OliJ",
+        "Rackz089"
+      ],
+      "vp": 49443.809704701824
+    },
+    {
+      "id": "0x07d8501480ae49e88e52d0e77acdff83790badba32b8b4f04d0112d4fad6a7fc",
+      "voter": "0x3DF1b295d394B6c77415e9659Cc1a7DBCcA76Be7",
+      "created": 1660138328,
+      "choice": [
+        "Rackz089",
+        "derc"
+      ],
+      "vp": 160017.56119074274
+    },
+    {
+      "id": "0x4478605650e7b27931fb0087862b304c3ca3ef106e95229b6b365ebdf6b36807",
+      "voter": "0xB2d6Cc7098C3AecA089b6580A44b34559cd40971",
+      "created": 1660125472,
+      "choice": [
+        "Rackz089",
+        "derc"
+      ],
+      "vp": 11062.493032781085
+    },
+    {
+      "id": "0x469ae22e514857aa60668077af4b8a98c5c00e05228edd059cca4531b86aaa9d",
+      "voter": "0x908DB31Ce01DC42c8B712f9156E969bc65023119",
+      "created": 1660124428,
+      "choice": [
+        "Rackz089",
+        "OliJ",
+        "derc"
+      ],
+      "vp": 437717.94629349373
+    },
+    {
+      "id": "0xbea898c13a15c61e4f307e85e381f2b6eb39a45805fd56b6d14fbd110935be38",
+      "voter": "0x6f23759Dd4A1B4B422A8b087aa1D3338A6791Afb",
+      "created": 1660044055,
+      "choice": [
+        "Rackz089",
+        "derc",
+        "OliJ"
+      ],
+      "vp": 362.0915279018977
+    },
+    {
+      "id": "0x7975025b884cea2724533a374aa7f657c6648cca94e10cfa13fdc5d900a9a12a",
+      "voter": "0x99BcEa6bB0403927fB3c038163478D5b42082Fd9",
+      "created": 1660033875,
+      "choice": [
+        "Rackz089",
+        "derc",
+        "OliJ"
+      ],
+      "vp": 2604.305677722737
+    },
+    {
+      "id": "0x44a5891509875d77eb9a21e6af91e8570fe8ff24fb20fcfbe7e6f523f409df55",
+      "voter": "0xE76Be9C1e10910d6Bc6b63D8031729747910c2f6",
+      "created": 1660020298,
+      "choice": [
+        "derc",
+        "Rackz089"
+      ],
+      "vp": 81101.17147837058
+    },
+    {
+      "id": "0x770ced0456216349e09ab35efdbc0bf5d3f33c0743d9825fd6b1c6492aeb145d",
+      "voter": "0x94c5a4b47f49AFdDDDa4C781A5B3e47882c05BBf",
+      "created": 1659995818,
+      "choice": [
+        "derc",
+        "OliJ",
+        "Rackz089"
+      ],
+      "vp": 35000.21382050058
+    },
+    {
+      "id": "0x2847d2fe2cd26b72be5068fd9ecfa2f77b541f102b9a10a50c7632c2462a48bf",
+      "voter": "0x2412d03eEf066b4D38f43c62feBBCE5d6f8457e5",
+      "created": 1659976917,
+      "choice": [
+        "derc",
+        "Rackz089"
+      ],
+      "vp": 32.506596512775154
+    },
+    {
+      "id": "0x56da5112e63221f400a54c6c3fe51557ec03f89626005917ae86f1e966078257",
+      "voter": "0x2247772B13194424010404812bDEFd7025bFfeC3",
+      "created": 1659976897,
+      "choice": [
+        "derc",
+        "Rackz089"
+      ],
+      "vp": 3291.813769300707
+    },
+    {
+      "id": "0xb971d7cf20decd65a941ea2037d038c2fc801290899545e4b0246aa9586ce145",
+      "voter": "0x41374B389772D5aEd41240a57f5FFB087C6bfA93",
+      "created": 1659969511,
+      "choice": [
+        "derc",
+        "OliJ",
+        "Rackz089"
+      ],
+      "vp": 8345.487536219985
+    },
+    {
+      "id": "0xfd6a8478c168287906f6c6e998a1e608c5dc0a48eb6363428127f8eb52ce2fa3",
+      "voter": "0xB27a7bD98421EB9eAEE522335F45A6F5B65C5C8d",
+      "created": 1659958375,
+      "choice": [
+        "Rackz089",
+        "OliJ",
+        "derc"
+      ],
+      "vp": 182433.5014774537
+    },
+    {
+      "id": "0x81c755f3dd7a871ad7c3070f2cc845f58ada6f6ecd0909a5915bf5c2c3b925f2",
+      "voter": "0xF6F37336C7eFaCfAe9b0A9718a48B4FCd5014Ac9",
+      "created": 1659957335,
+      "choice": [
+        "derc",
+        "OliJ",
+        "Rackz089"
+      ],
+      "vp": 401780.05594443105
+    },
+    {
+      "id": "0x422e802d42deca9e80a1f11681b2e58b067cb9b05818169614a7895bbed911ac",
+      "voter": "0xF2B8C142Edcf2f3Cc22665cCE863a7C9A3E9F156",
+      "created": 1659956223,
+      "choice": [
+        "derc",
+        "OliJ",
+        "Rackz089"
+      ],
+      "vp": 185611.0057306359
+    }
+  ]
+}
