@@ -8,11 +8,12 @@ import { multiWinnerRCV } from "./modules/multiWinnerRCV";
 // Get args from command line
 import minimist from "minimist";
 const argv = minimist(process.argv.slice(2), {
-  string: ["p"],
+  string: ["p", "r"],
 });
 
-// -s <number>
-// -p <id>
+// -s <number>  (number of seats to allocate)
+// -p <id>      (proposal id)
+// -r <string>  (candidate to remove)
 
 // ProtocolDAO VOTE: https://snapshot.org/#/mstablegovernance.eth/proposal/0x38bb1ddabc3dc063720b9f180c945d3ed8ac2099a3163eb45654c49de5112362
 // const PROPOSAL_ID =
@@ -24,14 +25,17 @@ const argv = minimist(process.argv.slice(2), {
 //   "0xd1cb8ca65b3f2e784267e76244116f67081444c740e54d304238aaa15a1a8b9a";
 // const SEATS = 6;
 
-// TODO: Add functionality to remove choices from the calculation
-const removedChoices = [];
-
 const exec = async () => {
   // Check if arguments are provided
   if (!argv.s || !argv.p) {
     console.log("Please provide -s and -p arguments");
     return;
+  }
+
+  let removedChoices = [];
+  if (argv.r) {
+    console.log("Removing choice(s): " + argv.r);
+    removedChoices = argv.r.split(",");
   }
 
   console.log(`Getting votes for proposal ${argv.p}`);
