@@ -43,9 +43,15 @@ export const multiWinnerRCV = (
   // Remove excluded choices (because we need to recalculate)
   votes = shiftVotes(votes, removedChoices);
 
+  // Remove excluded choices from choices array
+  choices = choices.filter((choice: any, index: number) => {
+    return !removedChoices.includes(choice);
+  });
+
   // Define starting variables
   let totalVotes = 0;
   let winners = [];
+  let dropped = [];
   let round = 1;
 
   while (winners.length < seats) {
@@ -59,9 +65,7 @@ export const multiWinnerRCV = (
     votes.filter((vote: any) => vote.choice.length > 0);
 
     // Shift votes if have choices for candidates that already have been selected
-    for (let i = 0; i < seats; i++) {
-      votes = shiftVotes(votes, winners);
-    }
+    votes = shiftVotes(votes, [...winners, ...dropped]);
 
     // Get the total votes from the first round
     if (round === 1) {
@@ -124,10 +128,8 @@ export const multiWinnerRCV = (
       roundResult = `${sortedChoice[0]} has not reached the threshold`;
       console.log("No winner this round");
       // Remove the choice with the lowest vote count
-      let sortedVotesForChoice = Object.keys(votesForChoice).sort(
-        (a: any, b: any) => votesForChoice[a] - votesForChoice[b]
-      );
-      const lowestVote = sortedVotesForChoice[0];
+      const lowestVote = sortedChoice[sortedChoice.length - 1];
+
       roundResult += `, ${lowestVote} with the lowest votes has been removed`;
       console.log(`Removing lowest vote: ${lowestVote}`);
 
@@ -137,6 +139,8 @@ export const multiWinnerRCV = (
           votes[index].choice.shift();
         }
       });
+
+      dropped.push(lowestVote);
 
       choices.splice(choices.indexOf(lowestVote), 1);
     }
